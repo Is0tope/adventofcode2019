@@ -135,6 +135,7 @@ func main() {
 	markRequirementLevels("ORE", 0)
 
 	// Educated brute force
+	// Unsure if ore use is strictly sorted with respect to fuel requirement, so wary of using binary search.
 	cargo := int64(1000000000000)
 	fuel := int64(1)
 	step := int64(100000)
